@@ -173,5 +173,4 @@ Payload: <code>DATA_LEN<sup>lo</sup> DATA_LEN<sup>hi</sup> LZO_LEN<sup>lo</sup> 
 - `LZO_LEN` - LZO compressed data length
 - `LZO_DATA` - Compressed data
 
-Maximum of 4095 uncompressed bytes can be sent in a single packet, and since only complete lines are used, the effective limit is 21 lines[^lzo1x-limit].
-[^lzo1x-limit]: LZO1x limit can be calculated as: $\frac{4095\left[\texttt{byte}\right] * 2\left[\frac{\texttt{pixel}}{\texttt{byte}}\right]}{384\left[\frac{\texttt{pixel}}{\texttt{line}}\right]} = 21.328125 \left[\texttt{line}\right]$
+Maximum of 4095 uncompressed bytes can be sent in a single packet, and since only complete lines are used, the effective limit is 21 lines[^lzo1x-limit]. LZO1x limit can be calculated as: $\frac{4095\left[\texttt{byte}\right] * 2\left[\frac{\texttt{pixel}}{\texttt{byte}}\right]}{384\left[\frac{\texttt{pixel}}{\texttt{line}}\right]} = 21.328125 \left[\texttt{line}\right]$
